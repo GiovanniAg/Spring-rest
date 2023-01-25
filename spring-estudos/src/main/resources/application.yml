@@ -6,8 +6,12 @@ spring:
     password: admin123
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
       show-sql: false
+spring-doc:
+  pathsToMatch: /api/**/**
+  swagger-ui:
+    use-root-path: true
